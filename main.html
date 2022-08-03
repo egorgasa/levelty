@@ -21,7 +21,10 @@
   <div class="container">
     <div class="header__wrapper">
       <div class="header__logo">
-        <a href=""><img src="assets/img/svg/logo_white.svg" alt="" /></a>
+        <a href="">
+          <img src="assets/img/svg/logo.svg" class="logo_black" alt="" />
+          <img src="assets/img/svg/logo_white.svg" class="logo_white" alt=""
+        /></a>
       </div>
       <nav>
         <ul class="header__list">
@@ -36,6 +39,11 @@
       <div class="header__btn">
         <div class="header-btn__wrapper">
           <a href="">Blogs</a>
+        </div>
+      </div>
+      <div class="header__burger">
+        <div class="header-burger__inner">
+          <span></span><span></span><span></span>
         </div>
       </div>
     </div>
@@ -61,8 +69,7 @@
                 <a href="" class="btn">Join the game!</a>
               </div>
             </div>
-            <div class="baner__img"  data-aos="zoom-in"
-            data-aos-duration="1000">
+            <div class="baner__img" data-aos="fade-up" data-aos-duration="1000">
               <img src="assets/img/png/b_1.png" alt="" />
             </div>
           </div>
@@ -159,23 +166,22 @@
                   src="assets/img/jpg/img_6.jpeg"
                   class="forWhom-imgs__main"
                   alt=""
-                 
                 />
                 <img
-                  src="assets/img/png/img5.png"
-                  class="forWhom-imgs__mob"
+                  src="assets/img/png/img6.png"
+                  class="forWhom-imgs__mob forWhom-imgs__mob_two"
                   alt=""
                   data-aos="fade-right"
                   data-aos-duration="1000"
                 /><img
-                  src="assets/img/png/img4.png"
+                  src="assets/img/png/img1.png"
                   alt=""
-                  class="forWhom-imgs__one"
+                  class="forWhom-imgs__one forWhom-imgs__one_two"
                   data-aos="fade-left"
                   data-aos-duration="1000"
                 /><img
                   src="assets/img/png/img3.png"
-                  class="forWhom-imgs__two"
+                  class="forWhom-imgs__two forWhom-imgs__two_two"
                   alt=""
                   data-aos="fade-right"
                   data-aos-duration="1000"
@@ -263,7 +269,7 @@
                   data-aos="fade-right"
                   data-aos-duration="1000"
                 >
-                  <img src="assets/img/png/how.png" alt="" />
+                  <img src="assets/img/png/how_1.png" alt="" />
                 </div>
                 <div class="how-item__content">
                   <div class="how-item__contentInner">
@@ -326,52 +332,12 @@
                   data-aos="fade-left"
                   data-aos-duration="1000"
                 >
-                  <img src="assets/img/png/how.png" alt="" />
+                  <img src="assets/img/png/how_2.png" alt="" />
                 </div>
               </div>
             </div>
-            <div class="how-item">
-              <div class="how-item__wrapper">
-                <div
-                  class="how-item__img"
-                  data-aos="fade-right"
-                  data-aos-duration="1000"
-                >
-                  <img src="assets/img/png/how.png" alt="" />
-                </div>
-                <div class="how-item__content">
-                  <div class="how-item__contentInner">
-                    <div class="how-item__title">
-                      <p>Gamification</p>
-                    </div>
-                    <ul>
-                      <li>
-                        <p>
-                          Your child chooses a game avatar that suits them best
-                        </p>
-                      </li>
-                      <li>
-                        <p>
-                          Level up and get achievements by completing real-life
-                          tasks from parents
-                        </p>
-                      </li>
-                      <li>
-                        <p>
-                          Turn routine into a game with gamified design and
-                          mechanics
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="howFree__wrapper"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
+
+            <div class="howFree__wrapper">
               <div class="howFree__img">
                 <img src="assets/img/png/tryFree.png" alt="" />
               </div>
@@ -379,7 +345,7 @@
                 Our mission is to help parents with teaching them children using
                 play!
               </p>
-              <a href="">Try for free</a>
+              <a href="" class="btn">Try for free</a>
             </div>
           </div>
         </div>
@@ -441,9 +407,9 @@
           <div class="blockJoin__wrapper">
             <div
               class="blockJoin__img"
-              data-aos="fade-zoom-in"
+              data-aos="fade-right"
               data-aos-easing="ease-in-back"
-              data-aos-duration="1000"
+              data-aos-duration="1500"
             >
               <img src="assets/img/png/join.png" alt="" />
             </div>
@@ -488,6 +454,7 @@
                 class="plans-item"
                 data-aos="fade-down"
                 data-aos-duration="1000"
+                data-aos-delay="300"
               >
                 <div class="plans-item__wrapper">
                   <div class="plans-item__time">
@@ -509,7 +476,8 @@
               </div>
               <div
                 class="plans-item"
-                data-aos="fade-up"
+                data-aos="fade-down"
+                data-aos-delay="500"
                 data-aos-duration="1000"
               >
                 <div class="plans-item__wrapper">
@@ -534,6 +502,7 @@
                 class="plans-item"
                 data-aos="fade-down"
                 data-aos-duration="1000"
+                data-aos-delay="700"
               >
                 <div class="plans-item__wrapper">
                   <div class="plans-item__time">
@@ -662,8 +631,31 @@
           </div>
         </div>
       </section>
+      <div class="burger__menu">
+  <div class="burger__overlay"></div>
+  <div class="burger-menu__content">
+    <div class="burger_close">
+      <div class="burger-close__inner"><span></span><span></span></div>
+    </div>
+    <ul class="list_burger">
+      <li><a href="">About us</a></li>
+      <li><a href="">Blog</a></li>
+    </ul>
+    <div class="header__apps">
+      <p>Get Levelty App:</p>
+      <div class="header-apps__wrapper">
+        <a href="" class="btn_ios">
+          <img src="assets/img/svg/apple.svg" alt="" /> App Store</a
+        ><a href="" class="btn_android"
+          ><img src="assets/img/svg/google.svg" alt="" /> Google Play</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
     </main>
-    <footer class="footer">
+     <footer class="footer">
   <div class="container">
     <div class="footer__wrapper">
       <div class="footer__logo">
@@ -692,7 +684,8 @@
     </div>
   </div>
 </footer>
- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
 <script src="assets/js/main.js"></script>
 
